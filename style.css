@@ -1,0 +1,177 @@
+/*box-sizing diatur menjadi border-box agar ukuran width dan height dari elemen box include padding dan margin */
+
+* {
+  box-sizing: border-box;
+}
+
+/*mengatur tipe huruf dan margin untuk seluruh elemen yg ada di dalam body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/*mengatur header*/
+.header {
+  padding: 60px;
+  background-color: lightcoral;
+  color: white;
+  text-align: center;
+}
+
+/*navigation bar - berisi elemen link (a) */
+.navbar {
+  display: flex;
+  background-color: darkred;
+}
+
+/*mengatur style pada link yang berada di dalam class navbar */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*mengatur style ketika link berada pada state hover / saat link disorot*/
+.navbar a:hover {
+  background-color: white;
+  color: darkred;
+}
+
+/*sebagai flex container yang akan berisi 2 kolom content (side dan main)*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*sebagai konten kolom pertama, di sisi kiri*/
+.side {
+  flex: 30%;
+  background-color: rgb(235, 219, 221);
+  padding: 20px;
+}
+
+/*sebagai konten kolom kedua, di sisi kanan*/
+.main {
+  flex: 70%;
+  padding: 20px;
+  background-color: white;
+}
+
+/*gambar palsu*/
+.fakeimg {
+  background-color: darksalmon;
+  padding: 20px;
+  width: 100%;
+}
+
+/*footer*/
+.footer {
+  background-color: rgb(255, 129, 147);
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: auto;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.contact-top {
+  text-align: center;
+}
+
+.contact-form-item {
+  background-color: firebrick;
+  color: white;
+  font-size: 1.2rem;
+  padding: 3px;
+}
+
+.btn {
+  background-color: firebrick;
+  color: white;
+  font-size: 1.4rem;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: lightcoral;
+  color: firebrick;
+  cursor: pointer;
+}
+
+.download {
+  display: flex;
+  background-color: rgb(255, 215, 221);
+  flex-wrap: wrap;
+}
+
+.download > div {
+  flex: 20%;
+  padding: 30px;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  margin: auto;
+
+  background-color: rgb(251, 198, 225);
+}
+
+.profile_left {
+  width: 400px;
+  padding: 30px;
+}
+
+.profile_right {
+  flex: 70%;
+  padding: 30px;
+}
+
+/*responsive dengan media screen - pada ukuran 700px*/
+@media screen and (max-width: 700px) {
+  .row,
+  .navbar,
+  .download {
+    flex-direction: column;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .contact-form-item {
+    font-size: 0.8rem;
+  }
+  .contact-form {
+    flex: 90%;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profile {
+    flex: 90%;
+    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and(max-width: 300px) {
+  .profile_left {
+    width: 200px;
+    padding: 30px;
+  }
+  .fakeimg {
+    width: 50%;
+  }
+}
