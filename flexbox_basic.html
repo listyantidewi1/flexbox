@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Basic</title>
+    <link rel="stylesheet" href="flexbox_basic.css" />
+  </head>
+  <body>
+    <h1>Flexbox Basic</h1>
+
+    <p>Membuat flex container dengan 3 elemen div di dalamnya</p>
+    <div class="flex_container">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 3 elemen yg bertumpuk atas ke bawah
+      (flex-direction: column)
+    </p>
+    <div class="flex_container_column">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 3 elemen yg bertumpuk bawah ke atas
+      (flex-direction: column-reverse)
+    </p>
+    <div class="flex_container_column_reverse">
+      <div class="flex_items">A</div>
+      <div class="flex_items">B</div>
+      <div class="flex_items">C</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 3 elemen yg berbaris dari kiri ke kanan
+      (flex-direction: row)
+    </p>
+    <div class="flex_container_row">
+      <div class="flex_items">A</div>
+      <div class="flex_items">B</div>
+      <div class="flex_items">C</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 3 elemen yg berbaris dari kanan ke kiri
+      (flex-direction: row-reverse)
+    </p>
+    <div class="flex_container_row_reverse">
+      <div class="flex_items">A</div>
+      <div class="flex_items">B</div>
+      <div class="flex_items">C</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 12 elemen, di mana flex container-nya
+      menerapkan (flex-wrap: wrap)
+    </p>
+    <div class="flex_container_wrap">
+      <div class="flex_items_small">A</div>
+      <div class="flex_items_small">B</div>
+      <div class="flex_items_small">C</div>
+      <div class="flex_items_small">D</div>
+      <div class="flex_items_small">E</div>
+      <div class="flex_items_small">F</div>
+      <div class="flex_items_small">G</div>
+      <div class="flex_items_small">H</div>
+      <div class="flex_items_small">I</div>
+      <div class="flex_items_small">J</div>
+      <div class="flex_items_small">K</div>
+      <div class="flex_items_small">L</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 12 elemen, di mana flex container-nya
+      menerapkan (flex-wrap: nowrap)
+    </p>
+    <div class="flex_container_nowrap">
+      <div class="flex_items_small">A</div>
+      <div class="flex_items_small">B</div>
+      <div class="flex_items_small">C</div>
+      <div class="flex_items_small">D</div>
+      <div class="flex_items_small">E</div>
+      <div class="flex_items_small">F</div>
+      <div class="flex_items_small">G</div>
+      <div class="flex_items_small">H</div>
+      <div class="flex_items_small">I</div>
+      <div class="flex_items_small">J</div>
+      <div class="flex_items_small">K</div>
+      <div class="flex_items_small">L</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 12 elemen, di mana flex container-nya
+      menerapkan (flex-wrap: wrap-reverse)
+    </p>
+    <div class="flex_container_wrap_reverse">
+      <div class="flex_items_small">A</div>
+      <div class="flex_items_small">B</div>
+      <div class="flex_items_small">C</div>
+      <div class="flex_items_small">D</div>
+      <div class="flex_items_small">E</div>
+      <div class="flex_items_small">F</div>
+      <div class="flex_items_small">G</div>
+      <div class="flex_items_small">H</div>
+      <div class="flex_items_small">I</div>
+      <div class="flex_items_small">J</div>
+      <div class="flex_items_small">K</div>
+      <div class="flex_items_small">L</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 5 elemen, di mana flex container-nya
+      menerapkan (justify-content: center))
+    </p>
+    <div class="flex_container_justify_content_center">
+      <div class="flex_items_small">A</div>
+      <div class="flex_items_small">B</div>
+      <div class="flex_items_small">C</div>
+      <div class="flex_items_small">D</div>
+      <div class="flex_items_small">E</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 5 elemen, di mana flex container-nya
+      menerapkan (justify-content: space-around))
+    </p>
+    <div class="flex_container_justify_space_around">
+      <div class="flex_items_small">A</div>
+      <div class="flex_items_small">B</div>
+      <div class="flex_items_small">C</div>
+      <div class="flex_items_small">D</div>
+      <div class="flex_items_small">E</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 5 elemen, di mana flex container-nya
+      menerapkan (justify-content: space-between)
+    </p>
+    <div class="flex_container_justify_space_between">
+      <div class="flex_items_small">A</div>
+      <div class="flex_items_small">B</div>
+      <div class="flex_items_small">C</div>
+      <div class="flex_items_small">D</div>
+      <div class="flex_items_small">E</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 5 elemen, di mana flex container-nya
+      menerapkan (align-items: center)
+    </p>
+    <div class="flex_container_align_center">
+      <div class="flex_items_small">A</div>
+      <div class="flex_items_small">B</div>
+      <div class="flex_items_small">C</div>
+      <div class="flex_items_small">D</div>
+      <div class="flex_items_small">E</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 5 elemen, di mana flex container-nya
+      menerapkan (align-items: flex-start)
+    </p>
+    <div class="flex_container_align_flex_start">
+      <div class="flex_items_small">A</div>
+      <div class="flex_items_small">B</div>
+      <div class="flex_items_small">C</div>
+      <div class="flex_items_small">D</div>
+      <div class="flex_items_small">E</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 5 elemen, di mana flex container-nya
+      menerapkan (align-items: flex-end)
+    </p>
+    <div class="flex_container_align_flex_end">
+      <div class="flex_items_small">A</div>
+      <div class="flex_items_small">B</div>
+      <div class="flex_items_small">C</div>
+      <div class="flex_items_small">D</div>
+      <div class="flex_items_small">E</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 5 elemen, di mana flex container-nya
+      menerapkan (align-items: stretch)
+    </p>
+    <div class="flex_container_align_stretch">
+      <div class="flex_items_small">A</div>
+      <div class="flex_items_small">B</div>
+      <div class="flex_items_small">C</div>
+      <div class="flex_items_small">D</div>
+      <div class="flex_items_small">E</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 5 elemen, di mana flex container-nya
+      menerapkan (align-items: baseline)
+    </p>
+    <div class="flex_container_align_baseline">
+      <div class="flex_items_small"><h3>A</h3></div>
+      <div class="flex_items_small_1"><h1>B</h1></div>
+      <div class="flex_items_small_2"><h2>C</h2></div>
+      <div class="flex_items_small_2">D</div>
+      <div class="flex_items_small_1"><h4>E</h4></div>
+    </div>
+
+    <p>
+      Membuat flex container dengan satu elemen yang berada persis di tengah:
+      align-items: center; justify-content: center;
+    </p>
+    <div class="flex_container_perfect_center">
+      <div class="flex_items_small">A</div>
+    </div>
+
+    <p>Membuat flex container dengan 5 elemen, menggunakan order</p>
+    <div class="flex_container_align_center">
+      <div style="order: 4">A</div>
+      <div style="order: 2">B</div>
+      <div style="order: 5">C</div>
+      <div style="order: 1">D</div>
+      <div style="order: 3">E</div>
+    </div>
+
+    <p>
+      Membuat flex container dengan 5 elemen, menggunakan flex-grow
+      (menumbuhkan/membesarkan flex items)
+    </p>
+    <div class="flex_container_align_center">
+      <div style="flex-grow: 4">A</div>
+      <div style="flex-grow: 8">B</div>
+      <div style="flex-grow: 5">C</div>
+      <div style="flex-grow: 1">D</div>
+      <div style="flex-grow: 3">E</div>
+    </div>
+  </body>
+</html>
